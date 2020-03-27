@@ -1,0 +1,19 @@
+#https://leetcode.com/contest/weekly-contest-178
+
+# ac 2 of 4
+
+# 1: count the smaller element in array -> 3 ways: 2loops vs bs vs hash
+
+# 2: votes -> 2 way -> priority queue  vs hash 
+
+# 3: recursion check bst contain the linked list
+
+# 4 hard
+
+
+# solution python: https://www.youtube.com/watch?v=8qjk3KJEWH8
+# solution: https://www.youtube.com/watch?v=DxJwb22b4UU
+
+
+# 2 priority queue -> defined class to compare:
+https://leetcode.com/problems/rank-teams-by-votes/discuss/525034/Java-Custom-Comparator-or-PriorityQueue
