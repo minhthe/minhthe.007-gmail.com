@@ -1,5 +1,7 @@
 '''
 
+# bit manipulation:
+'{0:08b}'.format(number) =  bin(number)[2:].zfill(8) 
 
 
 
