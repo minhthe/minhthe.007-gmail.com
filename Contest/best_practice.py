@@ -13,4 +13,5 @@ from queue import Queue
 q = Queue()
 q.put((headID, informTime[headID]))  | q.get  | while(q.empty() is False):
 
+
 '''
