@@ -14,4 +14,14 @@ q = Queue()
 q.put((headID, informTime[headID]))  | q.get  | while(q.empty() is False):
 
 
+
+# linked list:
+tmp = head
+tmp = tmp.next
+-> head will follow 
+
+heap = tmp
+tmp = tmp.next
+-> head still stand on the first place
+
 '''
