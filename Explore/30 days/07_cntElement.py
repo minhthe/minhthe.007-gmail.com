@@ -1,27 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 '''
-https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/
+
 '''
->>>>>>> origin/master
-=======
-'''
-https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/
-'''
->>>>>>> origin/master
-=======
-'''
-https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/
-'''
->>>>>>> origin/master
-=======
-'''
-https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/
-'''
->>>>>>> origin/master
 class Solution(object):
     def countElements(self, arr):
         """
