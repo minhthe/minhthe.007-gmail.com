@@ -6,7 +6,7 @@ class Solution:
     def displayTable(self, orders: List[List[str]]) -> List[List[str]]:
         
         table = {}
-        dishes= []
+        dishes= set()
         
         for order in orders:
         
@@ -20,15 +20,14 @@ class Solution:
             else:
                 table[j][k] += 1
             
-            if k not in dishes:
-                dishes.append(k)
+            dishes.add(k)
                 
-
+        dishes = list(dishes)
         dishes.sort()
         rst = [['Table'] + (dishes)]
         
         for item in sorted(table.items(), key = lambda x: int(x[0])  ):
-            u, v = item[0], item[1]
+            u, v= item[0], item[1]
             tmp = [u]
             for d in dishes:
                 if(d in v):
@@ -37,4 +36,4 @@ class Solution:
                     tmp.append("0")
             rst.append(tmp)
         return rst
-            
+     
