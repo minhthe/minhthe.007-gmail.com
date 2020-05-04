@@ -2,7 +2,9 @@
 
 # bit manipulation:
 '{0:08b}'.format(number) =  bin(number)[2:].zfill(8) 
-
+**the max length of one number in bit : 
+from math import log
+l = int(log(num,2) + 1) if num > 0 else 1
 
 
 # heap max not maintain the heap property when get the item out of the curernt heap
