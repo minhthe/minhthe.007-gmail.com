@@ -1,5 +1,8 @@
 '''
 https://leetcode.com/problems/majority-element/
+
+***tle with this code:
+return [x for x in nums if nums.count(x) > (len(nums) >> 1)][0]
 '''
 
 class Solution:
