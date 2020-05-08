@@ -15,14 +15,10 @@ class Solution(object):
         :rtype: int
         """
         graph = {}
-        dist = {}
-        mp = {}
+        dist = {node: int(1e9) for node in range(1, N+1)}
         for u, v, w in times:  
             graph[u] = graph[u] + [(v,w)] if u in graph else [(v,w)]
-            dist[u] = int(1e9)
-            dist[v] = int(1e9)
-            mp[v] = True
-            mp[u] = True
+          
         def dfs(graph, dist):
             stk = [(K,0)]
             dist[K] = 0
@@ -39,4 +35,4 @@ class Solution(object):
           
         dfs(graph, dist)
         ans = max(dist.values())
-        return ans if ans < int(1e9) and len(mp.values()) == N else -1
+        return ans if ans < int(1e9)  else -1
