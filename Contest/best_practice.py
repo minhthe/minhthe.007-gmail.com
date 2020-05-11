@@ -26,4 +26,7 @@ heap = tmp
 tmp = tmp.next
 -> head still stand on the first place
 
+
+# clone object of matrix 2D:
+new_matrix = list(map(list, old_matrix))
 '''
