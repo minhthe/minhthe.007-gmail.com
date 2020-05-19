@@ -41,3 +41,23 @@ print(list(map(  lambda x : x**2 , numbers )))
 print(list(filter(  lambda x : x & 1 ==0 , numbers ) ))
 print(( reduce( lambda x, y : x *y, numbers ) ))
 
+##### usign deque#####
+import collections as col
+#Insert some elements into the queue at first
+my_deque = col.deque('124dfre')
+print('Dequeue: ' + str(my_deque))
+#insert x at right and B at left
+my_deque.append('x')
+my_deque.appendleft('B')
+print('Dequeue after appending: ' + str(my_deque))
+
+import collections as col
+#Insert some elements into the queue at first
+my_deque = col.deque('124dfre')
+print('Dequeue: ' + str(my_deque))
+#delete item from right and left
+item = my_deque.pop()
+print('Popped Item: ' + str(item))
+item = my_deque.popleft()
+print('Popped Item: ' + str(item))
+print('Dequeue after pop operations: ' + str(my_deque))
