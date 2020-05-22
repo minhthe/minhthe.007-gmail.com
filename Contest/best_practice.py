@@ -29,4 +29,10 @@ tmp = tmp.next
 
 # clone object of matrix 2D:
 new_matrix = list(map(list, old_matrix))
+
+
+### set the maxiumn when find minimun( base on perimeter ) -> not the value constrain. 
+https://app.codility.com/demo/results/trainingTWTH8T-98Q/
+
+
 '''
