@@ -1,5 +1,8 @@
 '''
 https://leetcode.com/problems/sum-root-to-leaf-numbers
+
+***noting:
+this method is dfs not bfs
 '''
 # Definition for a binary tree node.
 # class TreeNode:
