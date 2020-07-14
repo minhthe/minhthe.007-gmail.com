@@ -1,5 +1,35 @@
 '''
 https://leetcode.com/problems/pancake-sorting
+
+### code from pramp
+def flip(arr,k):
+  i, j = 0, k 
+  while i < j:
+    arr[i], arr[j] = arr[j], arr[i]
+    i +=1 
+    j -= 1
+  return arr
+  
+  
+def findMax(arr, p)  :
+    pp = 0
+    mx = -int(1e9)
+    for i in range(0,p+1,1):
+      if arr[i] > mx:
+        mx = arr[i]
+        pp= i
+    return pp
+def pancake_sort(arr):
+  k = len(arr)
+  
+  for i in range(k -1 , -1, -1):
+    mx = findMax(arr, i)
+    if mx == i: continue
+    rst = flip(arr, mx)
+    rst = flip(arr, i)
+  return arr
+  
+
 '''
 class Solution:
     def pancakeSort(self, A: List[int]) -> List[int]:
