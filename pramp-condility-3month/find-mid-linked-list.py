@@ -9,4 +9,4 @@ class Solution:
 			slow = slow.next
 			if quick.next: quick = quick.next.next   # 1  null
 		#if quick: return slow
-		return slow
+		return slowl;
